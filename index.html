@@ -7,18 +7,18 @@
       <a-scene>
 
        <a-sky color="lightblue"></a-sky>
+    
+       <a-assets>
+        <a-asset-item id="my-obj" src="Finished baldis basics schoolhouse.obj"></a-asset-item>
+        <a-asset-item id="my-mtl" src="Finished baldis basics schoolhouse.mtl"></a-asset-item>
+      </a-assets>
       
-
+      <a-entity 
+        obj-model="obj: #Finished baldis basics schoolhouse.obj; mtl: #Finished baldis basics schoolhouse.mtl" 
+        position="0 0 0" 
+        scale="1 1 1">
+      </a-entity>
       
-        <a-assets>
-          <a-asset-item id="my-obj" src="Finished baldis basics schoolhouse.obj"></a-asset-item>
-          <a-asset-item id="my-mtl" src="Finished baldis basics schoolhouse.mtl"></a-asset-item>
-        </a-assets>
-
-        <a-entity obj-model="obj:Finished baldis basics schoolhouse.obj; mtl:Finished baldis basics schoolhouse.mtl" position="0 0 0" scale="1 1 1"></a-entity>
-      
-      
-
       </a-scene>
     </body>
 </html>
