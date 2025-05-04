@@ -5,7 +5,13 @@
     </head>
     <body>
         <a-scene>
-            <a-sky color="lightblue"></a-sky>
+          <a-scene reflection>
+            <a-sky src="url_to_your_skybox_texture.jpg"></a-sky>
+            <a-box position="0 1 -3" rotation="0 45 0"
+                     src="url_to_your_object_texture.jpg"
+                     material="metalness: 0.7; roughness: 0.5; envMap: true"></a-box>
+          </a-scene>
+          
             <a-plane rotation="-90 0 0" position="0 0 0" color="forestgreen"
                 width="100" height="100"> 
                    
