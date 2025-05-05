@@ -7,24 +7,29 @@
     <a-scene inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
 
       <a-sky color="#38e4ff"></a-sky>
-      <a-plane
-        scale="10000 10000 10000"
-        color="lightgreen"
-        rotation="-90 90 90"
-        position="0 0.05 0"    ></a-plane> 
+      <a-plane scale="10000 10000 10000" color="lightgreen" rotation="-90 90 90" position="0 -0.1067 0" material="" geometry=""></a-plane>
 
-        <!-- yeah so pretty much it wouldnt load the textures, making the models bland, so i had to go the hard way and use objs.. whatever -->
+        <!-- yeah so pretty much it wouldnt load the textures, making the models bland and texture-less, so i had to go the hard way and use objs.. whatever -->
         <!-- Also, for some reason, the inspect tool on the editor wont let me move forward using W, and when i scroll to go forward, there is a limit and i cant go further than that.-->
 
         <a-assets>
           
+          
+
           <a-asset-item id="schoolhouse-obj" src="Finished baldis basics schoolhouse.obj"></a-asset-item>
           <img id="schoolhouse-texture" src="Finished_baldis_basics_schoolhouse.png">
         
           
           <a-asset-item id="chair-obj" src="CHAIR USE THIS ONE.obj"></a-asset-item>
           <img id="chair-texture" src="Finished_baldis_basics_schoolhouse.png">
+
+          <a-asset-item id="notebook-obj" src="Notebook.obj"></a-asset-item>
+          <img id="notebook-texture" src="Finished_baldis_basics_schoolhouse.png">
+
         </a-assets>
+      
+          
+          
         
         
         <a-entity 
@@ -33,13 +38,218 @@
           position="5.7 11.5 -30" 
           scale="6 6 6">
         </a-entity>
-        
+
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture" position="12.13577 1.48812 -15.23215" scale="2 1.58 1.57">
+        </a-entity>
+
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture; color: #00ff11" position="-13.09414 1.44976 -17.35739" scale="2 1.58 1.57">
+        </a-entity>
+
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture; color: #f00000" position="23.34783 1.48812 -30.03815" scale="2 1.58 1.57" rotation="0 -88.83825205062439 0">
+        </a-entity>
       
-        <a-entity 
-          obj-model="obj: #chair-obj" 
-          material="src: #chair-texture" 
-          position="5.7 11.5 -30" 
-          scale="6 6 6">
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture; color: #8000ff" position="22.11226 1.48812 -44.7015" scale="2 1.58 1.57" rotation="0 -180 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture; color: #fbff00" position="-26.45472 1.42082 -49.97902" scale="2 1.58 1.57" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture; color: #00f0b4" position="10.78197 1.48812 -24.35721" scale="2 1.58 1.57" rotation="0 -88.83825205062439 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: Notebook.obj" material="src: #chair-texture; color: #00f0b4; emissive: #ffae00" position="-29.38146 1.48812 -25.45942" scale="2 1.58 1.57">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-7.0263 0.12527 -18.49217" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-4.24931 0.12527 -15.24951" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-10.02309 0.12527 -14.54768" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-10.02309 0.12527 -20.61953" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-4.15535 0.12527 -21.46383" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="5.7 0.12527 -13.7142" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="8.71922 0.12527 -16.20172" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="9.97467 0.05124 -20.17339" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="10.53989 0.12527 -13.16885" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="27.52745 0.12527 -16.41376" scale="2 2 2" rotation="0 90 0">
         </a-entity>
         
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="27.52745 0.12527 -10.88866" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
 
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="32.01697 0.12527 -12.84482" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="31.4269 0.12527 -16.1219" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="26.38428 0.12527 -24.89092" scale="2 2 2" rotation="0 -179.5741403187221 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="22.37605 0.12527 -27.41326" scale="2 2 2" rotation="0 -179.5741403187221 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="20.23701 0.12527 -23.59486" scale="2 2 2" rotation="0 -179.5741403187221 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-24.9588 0.07327 -45.01635" scale="2 2 2" rotation="0 180 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-27.91449 0.07327 -46.99776" scale="2 2 2" rotation="0 180 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-29.73391 0.07327 -42.18039" scale="2 2 2" rotation="0 180 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="24.1726 0.07327 -47.70485" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="27.14607 0.07327 -45.16694" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="30.97652 0.07327 -47.70485" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="25.39036 0.07327 -42.18039" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="30.51643 0.07327 -39.9438" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-26.56877 0.07327 -28.01568" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-22.75642 0.07327 -29.27385" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-23.78737 0.07327 -24.08868" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-26.56877 0.07327 -22.6643" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-11.55879 0.07327 -26.33995" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-8.4771 0.07327 -27.39702" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-13.0412 0.07327 -31.14792" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-7.70578 0.07327 -31.14792" scale="2 2 2" rotation="0 90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="8.3869 0.07327 -26.40291" scale="2 2 2">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="8.35488 0.07327 -30.59793" scale="2 2 2">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="14.09469 0.07327 -26.64819" scale="2 2 2">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="13.44562 0.07327 -30.59793" scale="2 2 2">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-25.48048 0.07327 -9.18116" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-25.90284 0.07327 -13.00293" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-21.90323 0.07327 -10.12185" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+        <a-entity obj-model="obj: CHAIR USE THIS ONE.obj" material="src: #chair-texture" position="-22.32876 0.07327 -15.04942" scale="2 2 2" rotation="0 -90 0">
+        </a-entity>
+
+<a-entity id="cameraRig">
+  <a-camera id="camera" position="0 1.6 0"></a-camera>
+</a-entity>
+
+<a-image id="faceMe"
+         src="baldi.png"
+         position="0 1.5 -15"
+         width="1" height="3"
+         face-camera>
+</a-image>
+
+<a-image id="Principal of the thing"
+           src="Principal of the thing.png"
+           position="0 1.5 -42"
+           width="1" height="2.5"
+           face-camera>
+  </a-image>
+
+  
+    
+    <a-image id="Playtime" src="Playtime girl.png" position="35.5794 1.0499 -50.56214" width="2" height="2"
+             animation="property: position; to: 35.5794 1.0499 -22; dur: 2000; loop: true; reset: true; easing: linear">
+    </a-image>
+ 
+
+  <a-image id="Invincible" src="Invincible.png" position="17.77795 1.54138 -48.85399" width="1" height="3" face-camera="" material="" geometry="">
+  </a-image>
+
+  <a-image id="Mater" src="Mater do not turn off your ps4.png" position="-22.02552 1.4942 -33.53103" width="1" height="3" face-camera="" material="" geometry="" scale="2.19 0.75 1.12">
+  </a-image>
+
+  <a-image id="Afton" src="Afton.png" position="3.589 0.95049 -30.63849" width="1" height="3" face-camera="" material="" geometry="" scale="1.32 0.56 1.12">
+  </a-image>
+
+  <a-image id="Sock" src="Sock puppet guy.png" position="-28.81095 1.23752 -19.34885" width="1" height="3" face-camera="" material="" geometry="" scale="1.61 0.82 1.12">
+  </a-image>
+
+  <a-image id="Melman" src="Melman.png" position="-25.84288 1.85639 -50.43889" width="1" height="3" face-camera="" material="" geometry="" scale="2.31624 1.26824 1.12">
+  </a-image>
+
+  <a-image id="Omniman" src="Omniman.png" position="40.76521 1.23752 -8.56357" width="1" height="3" face-camera="" material="" geometry="" scale="1.31274 0.82 1.12" rotation="-4.35030632601967 -176.7697444718398 4.983975938043422e-17">
+  </a-image>
+
+  <a-image id="Gotta Sweep" src="Gotta Sweep.png" position="31.55831 1.50184 -22.88948" width="1" height="3" face-camera="" material="" geometry="" scale="1.8824 0.94504 1.12" rotation="-0.6388053362350009 -176.89302962810106 0">
+  </a-image>
+
+
+</a-scene>
+
+
+<!-- I had to look up this one. -->
+
+
+<script>
+AFRAME.registerComponent('face-camera', {
+  tick: function () {
+    const target = document.querySelector('#camera').object3D;
+    const self = this.el.object3D;
+
+    // Get world positions
+    const targetPos = new THREE.Vector3();
+    const selfPos = new THREE.Vector3();
+    target.getWorldPosition(targetPos);
+    self.getWorldPosition(selfPos);
+
+    // Point image toward camera
+    self.lookAt(targetPos);
+  }
+});
+
+</script>
+  </body>
+</html>
