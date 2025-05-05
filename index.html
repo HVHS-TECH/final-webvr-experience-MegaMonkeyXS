@@ -6,6 +6,8 @@
   <body>
     <a-scene inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
 
+
+
       <a-entity sound="src:Baldis basics theme song.mp3; autoplay: true; loop: true; positional: false"></a-entity>
 
       <a-sky color="#38e4ff"></a-sky>
@@ -193,16 +195,19 @@
          face-camera>
 </a-image>
 
-<a-image id="Principal of the thing"
-           src="Principal of the thing.png"
-           position="0 1.5 -42"
-           width="1" height="2.5"
-           sound="src:25 Variations of Principal saying No Running in The Halls! in 52 Seconds (mp3cut.net).mp3; autoplay: true; loop: true">
 
-           face-camera>
+<a-image src="Principal of the thing.png"
+position="0 1.5 -5"
+width="1"
+height="2.5"
+sound="src:25 Variations of Principal saying No Running in The Halls! in 52 Seconds (mp3cut.net).mp3; autoplay: true; loop: true; positional: true"
+look-at="#camera"></a-image>
+
+
+         
            
 
-  </a-image>
+
 
   
     
